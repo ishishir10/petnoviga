@@ -1,11 +1,21 @@
 <html>
-    <head>
-        <title>Be Yourself Sound</title>
-    </head>
-    <body>
-        <a href="purple.html">purple</a>
-        <a href="orange.html">orange</a>
-        <a href="green.html">green</a>
 
-    </body>
+<head>
+    <title>UPS Pickup Point</title>
+    <script>
+        (function () {
+            var pkp = document.createElement('script');
+            pkp.type = 'text/javascript'; pkp.async = true;
+            pkp.src = 'https://pickuppoint.co.il/api/ups-pickups.sdk.TYPE.js';
+            document.getElementsByTagName('head')[0].appendChild(pkp);
+        })();
+    </script>
+</head>
+
+<body>
+    <div onclick="window.PickupsSDK.onClick();return;" class="ups-pickups ups-pickups-48"></div>
+    <div class="ups-pickups-info"></div>
+
+</body>
+
 </html>
