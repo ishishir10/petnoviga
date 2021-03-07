@@ -10,6 +10,11 @@
             document.getElementsByTagName('head')[0].appendChild(pkp);
         })();
     </script>
+    <script>
+        document.body.addEventListener('pickups-after-choosen', function (e, data) {
+            var pointDetails = e.originalEvent ? e.originalEvent.detail : e.detail;
+        });
+    </script>
 </head>
 
 <body>
