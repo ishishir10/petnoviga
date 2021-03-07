@@ -15,11 +15,17 @@
             var pointDetails = e.originalEvent ? e.originalEvent.detail : e.detail;
         });
     </script>
+    <script>
+        document.body.addEventListener('pickups-before-open', function () {
+            window.PickupsSDK.setDefaults();
+        });
+    </script>
 </head>
 
 <body>
     <div onclick="window.PickupsSDK.onClick();return;" class="ups-pickups ups-pickups-48"></div>
     <div class="ups-pickups-info"></div>
+    <div class="pickups-after-choosen"></div>
 
 </body>
 
