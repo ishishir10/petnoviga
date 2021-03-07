@@ -10,16 +10,6 @@
             document.getElementsByTagName('head')[0].appendChild(pkp);
         })();
     </script>
-    <script>
-        document.body.addEventListener('pickups-after-choosen', function (e, data) {
-            var pointDetails = e.originalEvent ? e.originalEvent.detail : e.detail;
-        });
-    </script>
-    <script>
-        document.body.addEventListener('pickups-before-open', function () {
-            window.PickupsSDK.setDefaults();
-        });
-    </script>
     <style>
         .center {
             margin: auto;
@@ -32,7 +22,6 @@
     <div class="center">
         <div onclick="window.PickupsSDK.onClick();return;" class="ups-pickups ups-pickups-48"></div>
         <div class="ups-pickups-info"></div>
-        <div class="pickups-after-choosen"></div>
     </div>
 
 </body>
