@@ -22,7 +22,6 @@
 
         .pickup-btn-container>a.pickup-btn-choose,
         .pickup-btn-container>a.pickup-showinmap {
-            padding: 3px;
             display: none;
         }
 
@@ -38,18 +37,24 @@
             width: 280px;
             border-radius: 5px;
             cursor: pointer;
+    
         }
 
         .ct-button--direction {
             visibility: hidden;
         }
+      .changeSize {
+    display: none;
+}
+      body {
+    margin: 0px !important;
+}
     </style>
 </head>
 
 <body>
     <div class="center">
-        <div onclick="window.PickupsSDK.onClick();return;" class="ups-pickups-48"><button class="button">מצא מיקומי
-                איסוף</button></div>
+        <div onclick="window.PickupsSDK.onClick();return;" class="ups-pickups-48"><button class="button">בחר/י נקודת איסוף נוחה עבורך</button></div>
         <div class="ups-pickups-info"></div>
     </div>
 
