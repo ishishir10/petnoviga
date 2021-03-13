@@ -19,12 +19,29 @@
         .ups-pickups {
             float: left !important;
         }
+
+        .pickup-btn-container>a.pickup-btn-choose,
+        .pickup-btn-container>a.pickup-showinmap {
+            padding: 3px;
+            display: none;
+        }
+
+        .button {
+            background-color: #1C3C72;
+            border: none;
+            color: white;
+            padding: 30px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
     </style>
 </head>
 
 <body>
     <div class="center">
-        <div onclick="window.PickupsSDK.onClick();return;" class="ups-pickups ups-pickups-48"></div>
+        <div onclick="window.PickupsSDK.onClick();return;" class="ups-pickups-48"><button class="button">מצא מיקומי איסוף</button></div>
         <div class="ups-pickups-info"></div>
     </div>
 
